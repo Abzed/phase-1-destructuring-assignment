@@ -1,6 +1,40 @@
 const farmAnimals = 'cow horse sheep pig chicken';
 
+let animalArr = farmAnimals.split(' ')
+
+const moo = animalArr[0]
+const neigh = animalArr[1]
+const baa = animalArr[2]
+const oink = animalArr[3]
+const cluck = animalArr[4]
+
+const newAnArr = {...animalArr}
+
+const bessie = animalArr[0]
+const dolly = animalArr[2]
+const babe = animalArr[3]
+const little = animalArr[4]
+
+const colorAnArr = {...newAnArr}
+
+const blackAndWhite = colorAnArr[0]
+const black = colorAnArr[2]
+const pink = colorAnArr[3]
+
+
 const colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
+
+const [red, orange, yellow, green, blue, indigo, violet] = colors
+
+const colorInit = {...colors}
+
+const r = colorInit[0]
+const o = colorInit[1]
+const y = colorInit[2]
+const g = colorInit[3]
+const b = colorInit[4]
+const v = colorInit[6]
+const indg = colorInit[5]
 
 const muppet = {
   muppetName: 'Miss Piggy',
@@ -9,6 +43,8 @@ const muppet = {
   job: 'Cast member of The Muppet Show',
   partner: 'Kermit'
 };
+
+const {muppetName, color, song, job, partner} = muppet
 
 const nestedMuppet = {
   nestedName: 'Kermit',
@@ -24,6 +60,20 @@ const nestedMuppet = {
   nestedJob: 'Host of The Muppet Show',
   nestedPartner: 'Miss Piggy'
 };
+
+const newMappet = {...muppet}
+
+newMappet.job = "Host of The Muppet Show"
+const nestedJob = newMappet.job
+
+newMappet.partner = "Miss Piggy"
+const nestedPartner = newMappet.partner 
+
+const newObj = {...nestedMuppet, ...newMappet}
+
+const song2 = newObj.album.theMuppetMovie.song2
+const song4 = newObj.album.theMuppetMovie.song4
+
 
 // Strings
 
